@@ -5,16 +5,16 @@ body {
 
 nav {
   background-color: white;
-  margin: 10px
+  margin: 10px;
 }
 
 .header1 {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
 .header2 {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -26,11 +26,11 @@ nav {
 
 header {
   text-align: center;
-  background-image: url(../images/header-illsutration-mobile@2x.png)
+  background-image: url(../images/header-illsutration-mobile@2x.png);
 }
 
 h1 {
-  color: #172B4D;
+  color: #172B4d;
   font-family: 'Inter', sans-serif;
   font-size: 45px;
   font-weight: bold;
@@ -38,11 +38,11 @@ h1 {
 }
 
 span {
-    color: #36B37E;
+  color: #36B37e;
 }
 
 .header-paragraph {
-  color: #172B4D;
+  color: #172B4d;
   font-size: 25px;
   padding: 15px;
 }
