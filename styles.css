@@ -1,35 +1,35 @@
-body{
-    width: 375px;
-    align-items: center;
+body {
+  width: 375px;
+  align-items: center;
 }
 
-nav{
+nav {
   background-color: white;
   margin: 10px
 }
 
-.header1{
+.header1 {
   display:flex;
   justify-content: space-between;
 }
 
-.header2{
+.header2 {
   display:flex;
   justify-content: space-between;
 }
 
-.menu-button{
+.menu-button {
   width: 40px;
   padding-right: 30px;
   height: 50px;
 }
 
-header{
+header {
   text-align: center;
   background-image: url(../images/header-illsutration-mobile@2x.png)
 }
 
-h1{
+h1 {
   color: #172B4D;
   font-family: 'Inter', sans-serif;
   font-size: 45px;
@@ -37,21 +37,21 @@ h1{
   padding: 10px;
 }
 
-span{
+span {
     color: #36B37E;
 }
 
-.header-paragraph{
+.header-paragraph {
   color: #172B4D;
   font-size: 25px;
   padding: 15px;
 }
 
-.follow-link{
+.follow-link {
   display: flex;
   justify-content: center;
 }
 
-a{
+a {
   padding: 10px;
 }
