@@ -166,7 +166,7 @@ li {
 }
 
 input[type=submit] {
-  background-color: #04aa6D;
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -179,7 +179,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-input[type=text], 
+input[type=text],
 select {
   width: 90%;
   padding: 15px;
