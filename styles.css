@@ -119,6 +119,9 @@ li {
   margin-bottom: 20px;
   background: #36b37f;
   border-radius: 4px;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 5px 90px;
 }
 
 .about-us {
