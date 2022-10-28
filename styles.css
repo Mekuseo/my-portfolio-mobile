@@ -25,7 +25,11 @@ header {
   justify-content: space-between;
 }
 
-.header2 a{
+a {
+  padding: 10px;
+}
+
+.header2 a {
   font-size: 1.5em;
 }
 
@@ -61,10 +65,6 @@ span {
 .follow-link {
   display: flex;
   justify-content: center;
-}
-
-a {
-  padding: 10px;
 }
 
 li {
@@ -103,7 +103,7 @@ li {
   justify-content: space-around;
   justify-content: flex-start;
   padding-left: 0;
-  font-size: .9em
+  font-size: 0.9em;
 }
 
 .card-tags li {
