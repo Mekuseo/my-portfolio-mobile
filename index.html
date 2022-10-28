@@ -14,13 +14,9 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="header1">
-        <h3>9:41</h3>
-        <img src="./images/mobile images.png" alt="mobile-link" />
-      </div>
-      <nav class="header2">
-        <h3>Welcome</h3>
+    <header class="header2">
+      <a href="#">Welcome</a>
+      <nav>
         <img class="menu-button" src="./images/Enabled.png" alt="mobile-menu" />
       </nav>
     </header>
@@ -62,9 +58,9 @@
         </li>
       </ul>
     </section>
-    <main>
+    <main class="grid-display">
       <h1>My Recent Works</h1>
-      <section class="grid-display">
+      <section>
         <div class="card">
           <div class="card-body">
             <img
@@ -73,11 +69,13 @@
               class="card-image"
             />
             <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-            <div class="card-tags">
-              <p>Ruby on Rails</p>
-              <p>css</p>
-              <p>JavaScript</p>
-              <p>html</p>
+            <div>
+              <ul class="card-tags">
+                <li>Ruby on Rails</li>
+                <li>css</li>
+                <li>JavaScript</li>
+                <li>html</li>
+              </ul>
             </div>
             <button class="card-button">See Project</button>
           </div>
@@ -90,11 +88,13 @@
               class="card-image"
             />
             <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-            <div class="card-tags">
-              <p>Ruby on Rails</p>
-              <p>css</p>
-              <p>JavaScript</p>
-              <p>html</p>
+            <div>
+              <ul class="card-tags">
+                <li>Ruby on Rails</li>
+                <li>css</li>
+                <li>JavaScript</li>
+                <li>html</li>
+              </ul>
             </div>
             <button class="card-button">See Project</button>
           </div>
@@ -107,11 +107,13 @@
               class="card-image"
             />
             <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-            <div class="card-tags">
-              <p>Ruby on Rails</p>
-              <p>css</p>
-              <p>JavaScript</p>
-              <p>html</p>
+            <div>
+              <ul class="card-tags">
+                <li>Ruby on Rails</li>
+                <li>css</li>
+                <li>JavaScript</li>
+                <li>html</li>
+              </ul>
             </div>
             <button class="card-button">See Project</button>
           </div>
@@ -124,11 +126,13 @@
               class="card-image"
             />
             <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-            <div class="card-tags">
-              <p>Ruby on Rails</p>
-              <p>css</p>
-              <p>JavaScript</p>
-              <p>html</p>
+            <div>
+              <ul class="card-tags">
+                <li>Ruby on Rails</li>
+                <li>css</li>
+                <li>JavaScript</li>
+                <li>html</li>
+              </ul>
             </div>
             <button class="card-button">See Project</button>
           </div>
@@ -141,11 +145,13 @@
               class="card-image"
             />
             <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-            <div class="card-tags">
-              <p>Ruby on Rails</p>
-              <p>css</p>
-              <p>JavaScript</p>
-              <p>html</p>
+            <div>
+              <ul class="card-tags">
+                <li>Ruby on Rails</li>
+                <li>css</li>
+                <li>JavaScript</li>
+                <li>html</li>
+              </ul>
             </div>
             <button class="card-button">See Project</button>
           </div>
@@ -158,19 +164,19 @@
               class="card-image"
             />
             <h2 class="card-title">Multi-Post Stories Gain+Glory</h2>
-            <div class="card-tags">
-              <p class="card-p">Ruby on Rails</p>
-              <p class="card-p">css</p>
-              <p class="card-p">JavaScript</p>
-              <p class="card-p">html</p>
+            <div>
+              <ul class="card-tags">
+                <li>Ruby on Rails</li>
+                <li>css</li>
+                <li>JavaScript</li>
+                <li>html</li>
+              </ul>
             </div>
             <button class="card-button">See Project</button>
           </div>
         </div>
       </section>
     </main>
-
-    <footer>
       <section class="about-us">
         <h1 class="about-heading">About Me</h1>
         <p>
@@ -198,9 +204,9 @@
                   <h4 class="footer-tags">Ruby</h4>
                 </div>
                 <div class="footer-list">
-                    <h4 class="footer-tags">Html</h4>
-                    <h4 class="footer-tags">CSS</h4>
-                  </div>
+                  <h4 class="footer-tags">Html</h4>
+                  <h4 class="footer-tags">CSS</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -247,52 +253,68 @@
             </div>
           </div>
         </section>
-        <h1 class="footer-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+        <h1 class="footer-header">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h1>
         <section class="contact-form">
-            <form>
-                <lable for="fname"></lable>
-                <input type="text" id="fname" name="firstname" placeholder="Full name">
+          <form>
+            <lable for="fname"></lable>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Full name"
+            />
 
-                <label for="email"></label>
-                <input type="text" id="email" name="email" placeholder="Email Address">
+            <label for="email"></label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+            />
 
-                <label for="subject" ></label>
-                <textarea id="subject" name="subject" placeholder="Enter Text Here"></textarea>
-                
-                <input type="submit" value="Get in Touch">
-            </form>
-            <div>
-                <ul class="follow-link">
-                    <li>
-                      <a href="https://twitter.com"
-                        ><img src="./images/twitter.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://linkedin.com"
-                        ><img src="./images/Linkedin icon.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://medium.com"
-                        ><img src="./images/medium.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com"
-                        ><img src="./images/github.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="https://angellist.com"
-                        ><img src="./images/angellist.svg" alt=""
-                      /></a>
-                    </li>
-                  </ul>
-            </div>
-            <a href="mailto:mekuseo@gmail.com">mekuseo@gmail.com</a>
+            <label for="subject"></label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Enter Text Here"
+            ></textarea>
+
+            <input type="submit" value="Get in Touch" />
+          </form>
+          <div>
+            <ul class="follow-link">
+              <li>
+                <a href="https://twitter.com"
+                  ><img src="./images/twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com"
+                  ><img src="./images/Linkedin icon.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://medium.com"
+                  ><img src="./images/medium.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com"
+                  ><img src="./images/github.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://angellist.com"
+                  ><img src="./images/angellist.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <a href="mailto:mekuseo@gmail.com">mekuseo@gmail.com</a>
         </section>
       </div>
-    </footer>
   </body>
 </html>

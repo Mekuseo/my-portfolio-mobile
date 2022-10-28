@@ -7,6 +7,7 @@ body {
 
 .heading {
   background-image: url(../images/header-illsutration-mobile.svg);
+  background-position: center;
 }
 
 header {
@@ -22,6 +23,10 @@ header {
 .header2 {
   display: flex;
   justify-content: space-between;
+}
+
+.header2 a{
+  font-size: 1.5em;
 }
 
 .menu-button {
@@ -85,20 +90,27 @@ li {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid gray;
   border-radius: 5px;
+  margin: 20px 0;
 }
 
 .card-tags {
   display: flex;
   justify-content: space-around;
+  justify-content: flex-start;
+  padding-left: 0;
+  font-size: .9em
 }
 
-.card-tags p {
+.card-tags li {
   background-color: #ebf0ee;
   padding: 8px 6px;
   border-radius: 4px;
+  margin: 0 5px;
 }
 
 .card-button {
