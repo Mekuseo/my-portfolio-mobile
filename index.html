@@ -169,21 +169,24 @@
         <h1>I'm always interested in hearing about new projects, so if you'd like to chat 
           please get in touch.
         </h1>
-        <form action="" class="contact-form">
+        <form action="https://formspree.io/f/mqkjgzqo"  method="post" class="contact-form">
           <label for="fname"></lable>
           <input
             type="text"
             id="fname"
             name="firstname"
             placeholder="Full name"
+            maxlength="30"
+            required
           />
   
           <label for="email"></label>
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
             placeholder="Email Address"
+            required
           />
   
           <label for="subject"></label>
@@ -191,9 +194,11 @@
             id="subject"
             name="subject"
             placeholder="Enter Text Here"
+            maxlength="500"
+            required
           ></textarea>
   
-          <input type="submit" value="Get in Touch" />
+          <input type="submit" value="Get in touch" />
         </form>
         <ul class="social-list">
           <li><a href="#"><img src="./images/twitter.svg" alt=""></a></li>

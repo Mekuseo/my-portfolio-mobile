@@ -1,6 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: rgb(114, 112, 109);
+  margin: 0;
 }
 
 .mobile-view {
@@ -222,8 +223,9 @@ footer h1 {
 }
 
 input[type=submit] {
-  background-color: #04aa6d;
+  background-color: #36b37f;
   color: white;
+  font-family: Inter, sans-serif;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -249,6 +251,7 @@ select {
 
 textarea {
   width: 90%;
+  color: black;
   padding: 50px 20px;
   border: 1px solid green;
   border-radius: 4px;
@@ -260,6 +263,7 @@ textarea {
 
 .footer-mail {
   text-decoration: none;
+  font-family: Inter, sans-serif;
 }
 
 /* footer end */
