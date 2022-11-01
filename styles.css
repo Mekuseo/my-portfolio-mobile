@@ -10,18 +10,6 @@ body {
   padding: 20px;
   margin: 50px auto;
 }
-/* 
-@media (max-width: 600px) {
-  body {
-    background-color: rgb(114,112,109);
-  }
-
-  .mobile-view {
-    background-color: white;
-    padding: 20px;
-    margin: 50px auto;
-  }
-} */
 
 /* navbar start */
 nav {
