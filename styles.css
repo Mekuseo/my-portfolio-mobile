@@ -1,182 +1,224 @@
 body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(114, 112, 109);
+}
+
+.mobile-view {
   width: 375px;
-  align-items: center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.heading {
-  background-image: url(../images/header-illsutration-mobile.svg);
-  background-position: center;
-}
-
-header {
   background-color: white;
-  margin: 10px;
+  padding: 20px;
+  margin: 50px auto;
 }
 
-.header1 {
+/* navbar start */
+nav {
+  color: black;
   display: flex;
   justify-content: space-between;
 }
 
-.header2 {
+nav h2 {
+  font-size: 1em;
+}
+
+/* navbar end */
+
+/* header start */
+header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  background-image: url(images/header-illsutration-mobile.svg);
 }
 
-a {
-  padding: 10px;
-}
-
-.header2 a {
-  font-size: 1.5em;
-}
-
-.menu-button {
-  width: 40px;
-  padding-right: 30px;
-  height: 50px;
-}
-
-.background-image {
-  position: absolute;
-  padding-right: 100px;
-}
-
-h1 {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
-  font-size: 45px;
+header h1 {
+  color: #172b40;
+  font-size: 2.5em;
   font-weight: 700;
+}
+
+header span {
+  color: #26b37e;
+}
+
+header p {
+  color: #172b4d;
+  font-size: 1.25em;
+  line-height: 28px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
   padding: 10px;
 }
 
-span {
-  color: #36b37e;
+.disable-circle {
+  padding: 40px 0;
 }
 
-.heading-paragraph {
-  color: #172b4d;
-  font-size: 25px;
-  padding: 15px;
-}
+/* header end */
 
-.follow-link {
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
-
-.grid-display {
+/* main start */
+main {
   display: grid;
-  margin: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 24rem));
-  grid-gap: 2rem;
-  justify-content: center;
-  font-family: 'Inter', sans-serif;
-  color: #3a4a42;
-}
-
-.card-body img {
-  width: 309px;
-  height: 256px;
+  grid-template-columns: 1/1/1/1/1;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border: 1px solid gray;
-  border-radius: 5px;
   margin: 20px 0;
 }
 
-.card-tags {
-  display: flex;
-  justify-content: space-around;
-  justify-content: flex-start;
-  padding-left: 0;
-  font-size: 0.9em;
+.card img {
+  width: 375px;
+  height: 375px;
+  border-radius: 7px;
 }
 
-.card-tags li {
-  background-color: #ebf0ee;
-  padding: 8px 6px;
-  border-radius: 4px;
-  margin: 0 5px;
-}
-
-.card-button {
-  color: white;
-  padding: 12px;
-  background: #36b37f;
-  border-radius: 4px;
-  font-size: 17px;
-  font-weight: 500;
-  margin: 20px 90px;
-}
-
-.about-us {
+.card-items-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+  bottom: 40px;
+  background-color: white;
+  border: 2px solid rgb(170, 168, 168);
 }
 
-.about-heading {
-  margin: 0;
+footer h1 {
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 70px;
+  color: #172b40;
+  text-align: center;
 }
 
-.about-us p {
-  margin: 0 0 15px 0;
+.card-items-container h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #3a4a42;
 }
 
-.footer-grid {
-  display: grid;
-  margin: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 24rem));
-  grid-gap: 2rem;
+.card-items-container ul {
+  display: flex;
   justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 50px 0;
 }
 
-.footer-card {
+.card-items-container li {
+  background-color: #ebf0ee;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.card-button button {
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: #36b37f;
+  padding: 12px;
+  margin-bottom: 40px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+}
+
+/* main end */
+
+/* about us start */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1/1/1/1;
+  margin-bottom: 60px;
+}
+
+.about-header {
   display: flex;
   flex-direction: column;
-  background-color: #e5e5e5;
-  justify-items: center;
+  text-align: center;
+}
+
+.about-header .card-button {
+  background-image: url(images/illustration-\ about\ me-\ mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about-grid h1 {
+  font-size: 3em;
+  color: #172b4d;
+  background-image: url(/images/illustration\ 1-\ about\ me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about-grid p {
+  color: #172b40;
+  line-height: 32px;
+  font-size: 1.5em;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebf0ee;
+  border: 1px solid rgb(171, 170, 170);
+  margin: 20px 0;
   border-radius: 8px;
 }
 
-.footer-img {
+.about-card img {
   width: 150px;
-  padding: 40px;
+  padding: 20px 0;
+  margin: 0 auto;
 }
 
-.footer-list {
+.about-card h2 {
+  color: #344563;
+  font-size: 2em;
+  margin: 0;
+}
+
+.about-card ul {
   display: flex;
   justify-content: center;
-  color: #36b37e;
-  margin: 7px;
-}
-
-.footer-tags {
-  padding: 15px;
-  margin: 5px;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.group-tag {
-  margin-bottom: 30px;
-}
-
-.footer-header {
+  flex-wrap: wrap;
+  list-style: none;
   padding: 0;
+}
+
+.about-card li {
+  margin: 10px;
+  font-size: 0.8em;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  color: #26b37e;
+  font-weight: 800;
+}
+
+/* about us end */
+
+/* footer start */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 input[type=submit] {
@@ -196,26 +238,18 @@ input[type=submit]:hover {
 input[type=text],
 select {
   width: 90%;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
   resize: vertical;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  background-color: white;
-  padding: 20px;
 }
 
 textarea {
   width: 90%;
-  padding: 50px;
+  padding: 50px 20px;
   border: 1px solid green;
   border-radius: 4px;
   box-sizing: border-box;
@@ -223,3 +257,9 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
+.footer-mail {
+  text-decoration: none;
+}
+
+/* footer end */
