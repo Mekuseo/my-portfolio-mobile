@@ -5,7 +5,6 @@ body {
 }
 
 .mobile-view {
-  width: 375px;
   background-color: white;
   padding: 20px;
   margin: 50px auto;
@@ -13,13 +12,17 @@ body {
 
 /* navbar start */
 nav {
-  color: black;
   display: flex;
+  color: black;
   justify-content: space-between;
 }
 
 nav h2 {
   font-size: 1em;
+}
+
+.destop-menu {
+  display: none;
 }
 
 /* navbar end */
@@ -70,7 +73,7 @@ header p {
 /* main start */
 main {
   display: grid;
-  grid-template-columns: 1/1/1/1/1;
+  grid-template-columns: auto;
 }
 
 .card {
@@ -78,8 +81,8 @@ main {
 }
 
 .card img {
-  width: 375px;
-  height: 375px;
+  max-width: 100%;
+  height: auto;
   border-radius: 7px;
 }
 
@@ -92,6 +95,10 @@ main {
   bottom: 40px;
   background-color: white;
   border: 2px solid rgb(170, 168, 168);
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 footer h1 {
@@ -142,7 +149,7 @@ footer h1 {
 /* about us start */
 .about-grid {
   display: grid;
-  grid-template-columns: 1/1/1/1;
+  grid-template-columns: auto;
   margin-bottom: 60px;
 }
 
@@ -268,3 +275,225 @@ textarea {
 }
 
 /* footer end */
+
+/* Desktop Version Start */
+
+@media (min-width: 768px) {
+  /* desktop Nav */
+  body {
+    background-color: #fff;
+  }
+
+  .mobile-view {
+    width: auto;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav h2,
+  nav img {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .destop-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .destop-menu-list {
+    margin: 0 30px;
+    font-size: 1.2em;
+  }
+
+  /* Desktop Nav End */
+
+  /* Desktop Header Start */
+  header {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 160px 0;
+    gap: 24px;
+    position: absolute;
+    width: 920px;
+    height: 756px;
+    left: 254px;
+    top: 98px;
+  }
+
+  .nav-header-background {
+    background-image: url(images/Header-llustration-desktop.svg);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 950px;
+    top: -398px;
+    left: 27px;
+  }
+
+  header h1 {
+    width: 920px;
+    height: 114px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+  }
+
+  header p {
+    width: 798px;
+    height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .social-list {
+    align-items: center;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+  }
+
+  .disable-circle {
+    width: 920px;
+    height: 114px;
+  }
+
+  /* Desktop Header End */
+
+  /* Desktop Main Start */
+  section {
+    width: 1440px;
+  }
+
+  main {
+    display: block;
+    width: 1440px;
+  }
+
+  .main-grid-container {
+    display: grid;
+    grid-template-columns: 369px 369px 369px;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  .card img {
+    width: 369px;
+    height: 375px;
+    border-radius: 7px;
+  }
+
+  main h1 {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  /* Desktop Main End */
+
+  /* Desktop About Us */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 369px  369px 369px;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  .about-grid {
+    display: block;
+  }
+
+  footer h1 {
+    font-size: 1.8em;
+    text-align: left;
+    line-height: 50px;
+  }
+
+  .about-grid h1 {
+    background-image: none;
+  }
+
+  .about-background1 {
+    background-image: url(images/illustration\ about\ me\ desktop.png), url(images/illustration-about-me-2-desktop.png);
+    background-position: center, left bottom;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+
+  .about-header {
+    background-image: none;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding: 0 260px;
+    margin: 0;
+  }
+
+  /* Desktop About Us */
+
+  /* Desktop Footer Start */
+  footer {
+    display: grid;
+    grid-template-columns: 463px 570px;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  footer .social-footer {
+    grid-column-start: auto;
+  }
+
+  .contact-form {
+    display: block;
+    text-align: left;
+  }
+
+  input[type=text],
+  input[type=email],
+  select {
+    width: 108%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 17px;
+  }
+
+  textarea {
+    width: 108%;
+    color: black;
+    padding: 50px 20px;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+  }
+
+  /* Desktop Footer End */
+}
+
+/* Desktop Version End */
