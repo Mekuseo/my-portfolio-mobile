@@ -5,7 +5,6 @@ body {
 }
 
 .mobile-view {
-  width: 375px;
   background-color: white;
   padding: 20px;
   margin: 50px auto;
@@ -75,7 +74,6 @@ header p {
 main {
   display: grid;
   grid-template-columns: auto;
-  width: 375px;
 }
 
 .card {
@@ -83,8 +81,8 @@ main {
 }
 
 .card img {
-  width: 375px;
-  height: 375px;
+  max-width: 100%;
+  height: auto;
   border-radius: 7px;
 }
 
@@ -280,10 +278,10 @@ textarea {
 
 /* Desktop Version Start */
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   /* desktop Nav */
   body {
-    background-color: #e5e5e5;
+    background-color: #ffffff;
   }
 
   .mobile-view {
@@ -324,7 +322,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 160px 0;
+    padding: 60px 0 160px 0;
     gap: 24px;
     position: absolute;
     width: 920px;
@@ -337,7 +335,7 @@ textarea {
     background-image: url(images/Header-llustration-desktop.svg);
     background-repeat: no-repeat;
     width: 1440px;
-    height: 1250px;
+    height: 950px;
     top: -398px;
     left: 27px;
   }
@@ -354,7 +352,7 @@ textarea {
   }
 
   header p {
-    width: 920px;
+    width: 798px;
     height: 96px;
     font-style: normal;
     font-weight: 400;
