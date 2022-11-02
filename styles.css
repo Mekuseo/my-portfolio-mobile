@@ -324,7 +324,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 160px 0px;
+    padding: 160px 0;
     gap: 24px;
     position: absolute;
     width: 920px;
@@ -336,7 +336,7 @@ textarea {
   .nav-header-background {
     background-image: url(images/Header-llustration-desktop.svg);
     background-repeat: no-repeat;
-    width: 1440px ;
+    width: 1440px;
     height: 1250px;
     top: -398px;
     left: 27px;
@@ -352,7 +352,7 @@ textarea {
     text-align: center;
     letter-spacing: 0.37px;
   }
-  
+
   header p {
     width: 920px;
     height: 96px;
@@ -365,7 +365,7 @@ textarea {
 
   .social-list {
     align-items: center;
-    padding: 0px;
+    padding: 0;
     width: 200px;
     height: 40px;
   }
@@ -376,7 +376,6 @@ textarea {
   }
 
   /* Desktop Header End */
-
 
   /* Desktop Main Start */
   section {
@@ -420,6 +419,12 @@ textarea {
     display: block;
   }
 
+  footer h1 {
+    font-size: 1.8em;
+    text-align: left;
+    line-height: 50px;
+  }
+
   .about-grid h1 {
     background-image: none;
   }
@@ -437,10 +442,11 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     padding: 0 260px;
     margin: 0;
   }
+
   /* Desktop About Us */
 
   /* Desktop Footer Start */
@@ -452,14 +458,15 @@ textarea {
     align-items: center;
   }
 
-  footer .social-footer {
-    grid-column-start: auto;
+  .social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
   }
 
-  footer h1 {
-    font-size: 1.8em;
-    text-align: left;
-    line-height: 50px;
+  footer .social-footer {
+    grid-column-start: auto;
   }
 
   .contact-form {
@@ -467,7 +474,9 @@ textarea {
     text-align: left;
   }
 
-  input[type=text], input[type=email], select {
+  input[type=text], 
+    input[type=email], 
+    select {
     width: 108%;
     padding: 20px;
     border: 1px solid #ccc;
@@ -485,14 +494,6 @@ textarea {
     box-sizing: border-box;
     margin-top: 6px;
   }
-
-  .social-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-  }
-
 
   /* Desktop Footer End */
 }
