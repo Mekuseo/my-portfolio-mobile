@@ -477,12 +477,12 @@ textarea {
   input[type=text],
   input[type=email],
   select {
-  width: 108%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 17px;
+    width: 108%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 17px;
   }
 
   textarea {
