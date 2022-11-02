@@ -281,7 +281,7 @@ textarea {
 @media (min-width: 768px) {
   /* desktop Nav */
   body {
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .mobile-view {
