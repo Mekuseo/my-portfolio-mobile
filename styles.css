@@ -97,10 +97,6 @@ main {
   border: 2px solid rgb(170, 168, 168);
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
 footer h1 {
   font-size: 3em;
   font-weight: 800;
