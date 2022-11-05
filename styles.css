@@ -142,8 +142,14 @@ footer h1 {
   border: 0;
   border-radius: 8px;
   color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
+.button:hover {
+  background-color: ##c5e9da;
+  color: black;
+}
 /* main end */
 
 /* about us start */
@@ -312,6 +318,12 @@ textarea {
   .destop-menu-list {
     margin: 0 30px;
     font-size: 1.2em;
+    transition: 0.2s ease;
+  }
+
+  .destop-menu-list:hover {
+    color: #36b37f;
+    cursor: pointer;
   }
 
   /* Desktop Nav End */
